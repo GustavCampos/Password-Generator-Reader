@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Password G and R</title>
+    <link rel="shortcut icon" href="data/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Password Generator and Reader</h1>
+    </header>
+    <section id="configuracoes">
+        <div id="inputs">
+            <h2>Configurations</h2>
+            <p><strong>Choose in your own way the type of password you want to have!</strong></p>
+            </p>
+            <p>
+                <label for="tamsenha">Size of the password (characters): </label>
+                <select name="tamsenha" id="tamsenha">
+                    <option value="char4">4</option>
+                    <option value="char6" selected>6</option>
+                    <option value="char8">8</option>
+                    <option value="char10">10</option>
+                    <option value="char12">12</option>
+                    <option value="char16">16</option>
+                </select>
+            </p>
+            <p>
+                <label for="upperchar">Include upper case characters (A, B, C, ...): </label>
+                <input type="checkbox" name="upperchar" id="upperchar" class="checkbox">
+            </p>
+            <p>
+                <label for="numchar">Include numeric characters (0, 1, 2, ...): </label>
+                <input type="checkbox" name="numchar" id="numchar" class="checkbox">
+            </p>
+            <p>
+                <label for="espchar">Include especial characters (!, @, #, ...): </label>
+                <input type="checkbox" name="espchar" id="espchar" class="checkbox">
+            </p>
+            <p>
+                <label for="semchar">Include semantic characters ({, [, ;, etc...)</label>
+                <input type="checkbox" name="semchar" id="semchar" class="checkbox">
+            </p>
+            <p>
+                <label for="accchar">Include accented characters (á, ë, õ, etc...)</label>
+                <input type="checkbox" name="accchar" id="accchar" class="checkbox">
+            </p>
+            <p>
+                <input type="button" value="Generate Password" id="generatebtn" class="button">
+            </p>
+        </div>
+    </section>
+    <br>
+    <section id="validador">
+        <p>
+            <strong>Your password will appear in this space below.</strong>
+            <br>
+            You can also write a password in this blank space to analize if this password is strong.
+        </p>
+        <p>
+            <input type="text" id="senhatxt" class="button2">
+            <input type="button" value="copy" id="copybutton" class="button">
+        </p>
+    </section>
+    <footer>
+        <p>&copy;GustavoCampos</p>
+    </footer>
+    <script src="main.js"></script>
+</body>
+</html>

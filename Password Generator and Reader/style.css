@@ -1,0 +1,45 @@
+body {
+    font: normal 13pt arial;
+    color: white;
+    text-align: center;
+    background-color: #0077ff9c;
+}
+
+section {
+    background-color: white;
+    color: black;
+    width: 800px;
+    border-radius: 7px;
+    padding: 5px;
+    margin: auto;
+}
+
+
+input.button {
+    color: white;
+    background-color:  #0075ff;
+    border-radius: 5px;
+    width: 200px;
+    height: 35px;
+}
+
+input#copybutton {
+    width: 60px;
+}
+
+input.button2 {
+    font: normal 15pt arial;
+    text-align: center;
+    width: 200px;
+    height: 30px;
+}
+
+input.checkbox {
+    background-color: #0075ff;
+    width: 50;
+    height: 50;
+}
+
+section#validator {
+    padding: 3px;
+}
