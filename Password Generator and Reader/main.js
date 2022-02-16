@@ -188,5 +188,5 @@ function createPw() {
 function copyText() {
     resTextPw.select()
     document.execCommand("copy")
-    window.alert("Copiado para área de Transferência")
+    window.alert("Copied to the transfer area.")
 }
