@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SGV Senhas</title>
+    <link rel="shortcut icon" href="data/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Gerador de Senha</h1>
+    </header>
+    <section id="configuracoes">
+        <div id="inputs">
+            <h2>Configurações</h2>
+            <p><strong>Escolha da sua maneira o tipo de senha que quer ter!</strong></p>
+            </p>
+            <p>
+                <label for="tamsenha">Tamanho da senha (caracteres): </label>
+                <select name="tamsenha" id="tamsenha">
+                    <option value="char4">4</option>
+                    <option value="char6" selected>6</option>
+                    <option value="char8">8</option>
+                    <option value="char10">10</option>
+                    <option value="char12">12</option>
+                    <option value="char16">16</option>
+                </select>
+            </p>
+            <p>
+                <label for="upperchar">Incluir caracteres altos (A, B, C, ...): </label>
+                <input type="checkbox" name="upperchar" id="upperchar" class="checkbox">
+            </p>
+            <p>
+                <label for="numchar">Incluir caracteres numéricos (0, 1, 2, ...): </label>
+                <input type="checkbox" name="numchar" id="numchar" class="checkbox">
+            </p>
+            <p>
+                <label for="espchar">Incluir caracteres especiais (!, @, #, ...): </label>
+                <input type="checkbox" name="espchar" id="espchar" class="checkbox">
+            </p>
+            <p>
+                <label for="semchar">Incluir caracteres semânticos ({, [, ;, etc...)</label>
+                <input type="checkbox" name="semchar" id="semchar" class="checkbox">
+            </p>
+            <p>
+                <label for="accchar">Incluir letras acentuadas (á, ë, õ, etc...)</label>
+                <input type="checkbox" name="accchar" id="accchar" class="checkbox">
+            </p>
+            <p>
+                <input type="button" value="Gerar Senha" id="generatebtn" class="button">
+            </p>
+        </div>
+    </section>
+    <br>
+    <section id="validador">
+        <p>Aqui aparece sua senha.</p>
+        <p>
+            <input type="text" id="senhatxt" class="button2">
+            <input type="button" value="Copiar" id="copybutton" class="button">
+        </p>
+    </section>
+    <footer>
+        <p>&copy;EvandroCampos</p>
+    </footer>
+    <script src="main.js"></script>
+</body>
+</html>
